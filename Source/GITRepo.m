@@ -100,7 +100,8 @@
     if ( [self initWithObjectStore:objectStore refStore:rStore] ) {
         self.root = rootPath;
         NSString * descFile = [self.root stringByAppendingPathComponent:@"description"];
-        self.desc = [NSString stringWithContentsOfFile:descFile];
+        //self.desc = [NSString stringWithContentsOfFile:descFile]; //10.5
+		self.desc = [NSString stringWithContentsOfFile:descFile encoding:NSUnicodeStringEncoding error:nil];
         self.bare = isBare;
     }
     return self;

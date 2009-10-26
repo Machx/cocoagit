@@ -122,7 +122,7 @@
 
     BOOL isDir;
     if ( !([fm fileExistsAtPath:[path stringByDeletingLastPathComponent] isDirectory:&isDir] && isDir) ) {
-        [fm createDirectoryAtPath:[path stringByDeletingLastPathComponent] attributes:nil];
+		[fm createDirectoryAtPath:[path stringByDeletingLastPathComponent] withIntermediateDirectories:YES attributes:nil error:nil];
     }
 
     NSString *meta = [NSString stringWithFormat:@"%@ %d", [GITObject stringForObjectType:type], [data length]];

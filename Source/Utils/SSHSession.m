@@ -122,7 +122,7 @@ NSString * const SSHUserDSAPrivateKeyFile = @"id_dsa";
 - (NSString *)authenticationTypesWithUser:(NSString *)username;
 {
     char *auth_list = libssh2_userauth_list(session, [username UTF8String], [username length]);
-    return [NSString stringWithCString:auth_list length:strlen(auth_list)];
+	return [NSString stringWithCString:auth_list encoding:NSUnicodeStringEncoding];
 }
 
 

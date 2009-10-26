@@ -40,7 +40,8 @@
         digestString[2*i]   = __HEHexDigits[digest[i] >> 4];            \
         digestString[2*i+1] = __HEHexDigits[digest[i] & 0x0f];          \
     }                                                                   \
-    return [NSString stringWithCString:(char *)digestString length:2*CC_##method##_DIGEST_LENGTH];
+	return [NSString stringWithCString:(char *)digestString encoding:NSUnicodeStringEncoding];
+//    return [NSString stringWithCString:(char *)digestString length:2*CC_##method##_DIGEST_LENGTH]; //10.5
 
 #pragma mark -
 #pragma mark SHA1 Hashing routines
