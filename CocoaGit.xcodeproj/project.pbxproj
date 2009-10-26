@@ -139,7 +139,7 @@
 		57D81B500F41960D002A571C /* libSSH.dylib in Copy libSSH */ = {isa = PBXBuildFile; fileRef = 31AF01AF0F142F7B00F43D38 /* libSSH.dylib */; };
 		57D81BA80F4216BE002A571C /* GITFetchProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D81BA60F4216BE002A571C /* GITFetchProcess.h */; };
 		57D81BA90F4216BE002A571C /* GITFetchProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D81BA70F4216BE002A571C /* GITFetchProcess.m */; };
-		57D81BD20F424E53002A571C /* GITRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D81BD00F424E53002A571C /* GITRef.h */; };
+		57D81BD20F424E53002A571C /* GITRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D81BD00F424E53002A571C /* GITRef.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57D81BD30F424E53002A571C /* GITRef.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D81BD10F424E53002A571C /* GITRef.m */; };
 		57E13E790EECF291003A3761 /* GITErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB1F0A60EC6F2DA006C68D0 /* GITErrors.m */; };
 		57E13E7A0EECF2AA003A3761 /* GITPackStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE329AF0E9BA2F8001E37D5 /* GITPackStore.m */; };
@@ -2140,7 +2140,7 @@
 		9FE790310EFCA75B009003C0 /* Debug-GC */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2238,7 +2238,7 @@
 		9FE790370EFCA764009003C0 /* Release-GC */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -2334,7 +2334,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2349,7 +2349,7 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -2370,7 +2370,7 @@
 				319B42D60F10518D00336E0A /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		31AF01B40F142FA100F43D38 /* Build configuration list for PBXNativeTarget "SSH" */ = {
 			isa = XCConfigurationList;
@@ -2381,7 +2381,7 @@
 				31AF01B30F142F8300F43D38 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		31AF03E00F14773800F43D38 /* Build configuration list for PBXNativeTarget "git-remote" */ = {
 			isa = XCConfigurationList;
@@ -2392,7 +2392,7 @@
 				31AF03CA0F14770D00F43D38 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		573755560F9860590049342E /* Build configuration list for PBXNativeTarget "git-rev-list" */ = {
 			isa = XCConfigurationList;
@@ -2403,7 +2403,7 @@
 				573755380F98601C0049342E /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		57A431190F6204BF00E6B701 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
@@ -2414,7 +2414,7 @@
 				57A431180F6204BE00E6B701 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		9F2153010EA68DC5004C6188 /* Build configuration list for PBXNativeTarget "git-pack-inspect" */ = {
 			isa = XCConfigurationList;
@@ -2425,7 +2425,7 @@
 				9FE7903A0EFCA764009003C0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		9F36941B0EACF05500E6777B /* Build configuration list for PBXNativeTarget "Git" */ = {
 			isa = XCConfigurationList;
@@ -2436,7 +2436,7 @@
 				9FE790380EFCA764009003C0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		9F66F7EA0EA112E200E7FAA9 /* Build configuration list for PBXAggregateTarget "Docs" */ = {
 			isa = XCConfigurationList;
@@ -2447,7 +2447,7 @@
 				9FE7903C0EFCA764009003C0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		9FA4E0730E19A59500724E6B /* Build configuration list for PBXNativeTarget "git-inspect" */ = {
 			isa = XCConfigurationList;
@@ -2458,7 +2458,7 @@
 				9FE790390EFCA764009003C0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CocoaGit" */ = {
 			isa = XCConfigurationList;
@@ -2469,7 +2469,7 @@
 				9FE790370EFCA764009003C0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-GC";
 		};
 /* End XCConfigurationList section */
 	};
