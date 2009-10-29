@@ -131,7 +131,7 @@
     if ( ![[NSFileManager defaultManager] fileExistsAtPath:aPath] )
         return nil;
     
-	NSString *context = [NSString stringWithContentsOfFile:aPath usedEncoding:nil error:nil];
+	NSString *contents = [NSString stringWithContentsOfFile:aPath usedEncoding:nil error:nil];
     if (! contents)
         return nil;
     

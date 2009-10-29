@@ -16,8 +16,8 @@
 
 @implementation GITSshTransport
 @synthesize session;
-@synthesize error;
-@synthesize status;
+@dynamic error;
+@dynamic status;
 
 + (BOOL) canHandleURL:(NSURL *)aURL;
 {
